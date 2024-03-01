@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="formValidation.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form signup">
+            <h2>Sign Up</h2>
+            <input type="text" id="firstName" placeholder="First name" required>
+            <!--  If the field is left empty, a validation error occurs --> 
+            <input type="text" id="lastName" placeholder="Last name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <label class="checkbox">
+                <input type="checkbox" id="agreeTerms" required>
+                <span>I agree to the terms & conditions</span>
+            </label>
+            <button type="button" onclick="validateForm()">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
